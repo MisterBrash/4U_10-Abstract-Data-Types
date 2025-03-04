@@ -2,59 +2,61 @@
 
 ###### ICS4U - Mr. Brash 🐿️
 
+In [the script file](script.js) you will find a simple example ADT that represents a person. Take a look at the syntax and how it is structured. Feel free to test using it with some quick sample code and ask if there is anything you do not understand.
+
 ## Your Task:
 
-In [the code file](script.js) you will find an example ADT that represents a person - someone with a bank account.
+A [stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) is an [abstract data type](https://en.wikipedia.org/wiki/Abstract_data_type) that we call **L**ast **I**n **F**irst **O**ut (LIFO). It is a well-known ADT in computer science.
 
-Create another ADT that represents a `bank_account`. The account will have the following _properties_:
-- `account_number`, a numeric value representing the account at the bank (whatever number you want)
-- `owner`, represents the owner of the account
-- `type`, a string representing the type of account. This can be one of the following but you can default it to "Savings":
-  - Savings
-  - Checking
-  - Corporate
-  - Loan
-  - RRSP
-- `valid_account_types`, an array of the above types ["Savings", "Checking", etc...]
-- `balance`, a numeric value that is the current balance in the account (start it at 100)
-- `transactions`, an array of strings describing each transaction (newest at the end). For example, if a deposit of $4.25 is made, a new entry should be added to `transactions`: "Deposit 4.25 Balance 104.25".
+<img alt="A stack visualization with pushing and popping" src="assets/stack.jpg" width="400px"><br>
+[Here is another visual representation of pushing and popping](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)#/media/File:Lifo_stack.svg).
 
-Furthermore, the `bank_account` will have the following functions:
-- `deposit(amount)` which will add the given `amount` to the `balance` in the account and return the new balance. A new `transaction` should be recorded (see below)
-- `withdraw(amount)` which will _only_ subtract from the balance if the account has enough money. Return the new (or current) balance. A new `transaction` should be recorded (see below)
-- `apply_interest()` which will apply 2.5% interest to the account (0.025). Return the new balance. A new `transaction` should be recorded (see below)
-- `set_type(account_type)` which will attempt to change the `type` of the account - but *only* if the new given type is in the `valid_account_types`. Only record the transaction if successful (see below).
-- `print_transactions(qty)` which prints the last `qty` transactions in the array (or less, if there are less).
+A [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) employs the following properties and functions:
 
-<br>**Transaction records:** (savings account):
-  ```JS
-  bank_account.print_transactions(6);
-  // Console output:
-  Withdraw $100 Balance $4.25
-  Withdraw $50 Insufficient Funds Balance $4.25
-  Deposit $10 Balance $14.25
-  Interest $0.36 Balance $14.61
-  Account type changed to Corporate
-  Deposit $40000 Balance $40014.25
-  ```
+- `contents[]`: the contents of the stack, typically hidden - more on that in a future lesson,
+- `push()`: add an element to the collection,
+- `pop()`: remove (and return) the most recently added element - the element on the _top_ of the stack,
+- `peek()`: return the most recently added element _without removing it from the stack_,
+- `is_empty()`: check if the stack is empty (returns true/false)
 
-Pay attention to the format of the transactions above.
-**Test your own code!**
+**Note:** we are simplifying our lives by using an *array* for the `contents`. Typically this is [a linked list](https://simple.wikipedia.org/wiki/Linked_list) and we can only see the "head" node.
 
 ---
 
-### Things to think about
-(you don't have to answer them)
+**When might this data structure be useful?**
 
-- What if that person wants more than one bank account?
-  - Or what if two people share an account?
-- What if we need more than one person?
-- What if the different account types had different interest rates?
-- What if we want the list of transactions and balance to get saved somewhere?
+There are _many_ uses:
+
+**Reversing a string or chain** - Put all the letters in a stack and pop them out. Because of the LIFO order of stack, you will get the letters in reverse order.
+
+**Web browsers** - The back button in a browser saves all the URLs you have visited previously in a stack. Each time you visit a new page, it is added on top of the stack. When you press the back button, the current URL is removed from the stack, and the previous URL is accessed.
+
+**Code compilers** - Compilers use the stack to calculate the value of expressions like 2 + 4 / 5 * (7 - 9) by converting the expression to prefix or postfix form.
 
 
-### Helpful Tips
-- Money should always be two decimal places, but `5.30` might print as `5.3` and that's ok.
-- Adding elements to an array is as easy as `.push()` ([click here to read](https://www.w3schools.com/jsref/jsref_push.asp))
-- You don't need the money symbol unless you _really_ want to.
-- Ask Mr. Brash for assistance
+# Your Task:
+Implement the `Stack` ADT in JavaScript, as described above.<br>**Note:** in a perfect world, the `contents` would be hidden and not directly accessible. We will talk about this more in a future lesson.
+
+Once your `Stack` is complete:
+- Create a function (outside the Stack ADT code) called `reverse_string(str)`. This function will *use* the Stack to *return* the given string `str` in reverse. **For Example:**
+  ```JS
+  reverse_string("Hello World!");
+  > '!dlroW olleH'
+  ```
+
+- create a function (outside the Stack ADT code) called `reverse_number(n)`. This function will use the Stack to *return* a *number* in reverse order. If done correctly, all data will *remain* a *number* and you will **not** convert to strings.<br> **For Example:**
+  ```JS
+  reverse_number(87631);
+  > 13678
+  ```
+
+  Note - the return value of `reverse_number()` must be *a number* (type: `number`), not a string.
+
+<br>
+
+<div style="text-align:center"><h3>Happy Coding! 🐿️</h3><img src="assets/stax.png" /></div>
+
+
+---
+
+<br><br>
