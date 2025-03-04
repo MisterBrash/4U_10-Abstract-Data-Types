@@ -10,7 +10,7 @@ In [the script file](script.js) you will find a simple example ADT that represen
 
 A [stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) is an [abstract data type](https://en.wikipedia.org/wiki/Abstract_data_type) that we call **L**ast **I**n **F**irst **O**ut (LIFO). It is a well-known ADT in computer science.
 
-<img alt="A stack visualization with pushing and popping" src="assets/stack.jpg" width="400px"><br>
+<img alt="A stack visualization with pushing and popping" src="./.assets/stack.jpg" width="400px"><br>
 [Here is another visual representation of pushing and popping](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)#/media/File:Lifo_stack.svg).
 
 ### A [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) employs the following properties and functions:
@@ -66,7 +66,7 @@ Once your `Stack` is complete:
 
 <br>
 
-<div style="text-align:center"><h3>Happy Coding! 🐿️</h3><img src="assets/stax.png" /></div>
+<div style="text-align:center"><h3>Happy Coding! 🐿️</h3><img src="./.assets/stax.png" /></div>
 
 🔙 [Go back to the lesson](./README.md)
 
