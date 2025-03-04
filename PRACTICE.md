@@ -66,6 +66,8 @@ Once your `Stack` is complete:
 
 <br>
 
+#### If you finish early, see Mr. Brash about another use for the Stack ADT.
+
 <div style="text-align:center"><h3>Happy Coding! 🐿️</h3><img src="./.assets/stax.png" /></div>
 
 🔙 [Go back to the lesson](./README.md)
