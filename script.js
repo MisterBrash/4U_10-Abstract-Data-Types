@@ -2,7 +2,9 @@
  * ICS4U - Mr. Brash 🐿️
  * Abstract Data Types (custom types)
  *
+ * A common ADT in programming is a Stack.
  * Read the README.md and STACK.md files carefully.
+ * Then create a Stack data type and test it with some functions.
  *
  * Author:
  *
