@@ -1,4 +1,4 @@
-# Abstract Data Types
+# Abstract Data Types (Lesson)
 
 ###### ICS4U - Mr. Brash 🐿️
 
@@ -82,5 +82,5 @@ famous_person.random_quote();
 Did you notice the keyword [`this`](https://www.w3schools.com/js/js_this.asp) in the `random_quote()` function above? [It's very important](https://www.w3schools.com/js/js_this.asp). \<-- Read that!
 
 
-When you think you're ready, take a look at the [task](TASK.md).
+When you think you're ready, take a look at the [classwork practice](PRACTICE.md).
 <br>
