@@ -14,7 +14,7 @@
 
 /* Example ADT of a 'person'
    We can also use 'let' instead of 'const' */
-const account_owner = {
+const Person = {
   firstName: "John",
   lastName: "Doe",
   age: 0,
