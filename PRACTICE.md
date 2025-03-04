@@ -1,4 +1,4 @@
-# 2.3 - Abstract Data Types
+# Abstract Data Types (Practice)
 
 ###### ICS4U - Mr. Brash 🐿️
 
